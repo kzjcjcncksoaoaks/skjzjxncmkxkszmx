@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Снежный барс — призрак гор</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@500;800&family=Material+Symbols+Rounded&display=swap">
+<noscript><style>.r{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+:root{--bg:#0a1626;--tx:#eaf3fb;--mu:#a3b8cc;--ice:#8fd8ff;--am:#ffc27a;--gl:rgba(255,255,255,.07);--bd:rgba(170,215,255,.2);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,::before,::after{box-sizing:inherit;margin:0}
+html{height:100%;background:var(--bg);font-size:clamp(14px,calc(.25vw + .45vh + 7px),44px);scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{height:100%;overflow:hidden;touch-action:pan-y;color:var(--tx);font:400 1rem/1.55 Manrope,system-ui,sans-serif;background:radial-gradient(110% 70% at 85% 0,#1b3a63 0,transparent 62%),radial-gradient(80% 60% at 0 100%,#17334f 0,transparent 60%),var(--bg)}
+main{position:relative;z-index:2;height:100%;overflow-y:auto;scroll-snap-type:y proximity;scroll-behavior:smooth;overscroll-behavior:contain;scrollbar-width:none}
+main::-webkit-scrollbar{display:none}
+section{min-height:100%;scroll-snap-align:start;position:relative;display:grid;align-items:center;overflow:hidden;padding:clamp(1.2rem,4vh,3rem) clamp(1.1rem,6vw,7rem) clamp(4.5rem,9vh,6rem);--gx:85%}
+section:nth-child(even){--gx:12%}
+section::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(55% 45% at var(--gx) 15%,rgba(120,185,255,.13),transparent 70%)}
+.w{position:relative;z-index:1;width:100%;max-width:92rem;margin:0 auto;display:grid;gap:clamp(1.2rem,2.6vw,2.6rem)}
+.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,24rem),1fr));align-items:center}
+.g{display:grid;gap:clamp(1rem,2vw,2rem);grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr))}
+h1,h2,h3,.n{font-family:Unbounded,Manrope,sans-serif;line-height:1.1}
+h1{font-size:clamp(2.4rem,7.2vw,6.2rem);font-weight:800;background:linear-gradient(100deg,#fff 15%,var(--ice) 45%,#fff 75%) 0/220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 7s linear infinite;padding-bottom:.1em}
+@keyframes sh{to{background-position:-220% 0}}
+h2{font-size:clamp(1.6rem,3.2vw + .3rem,3.4rem);font-weight:800;max-width:24ch}
+h3{font-size:1.05rem;font-weight:500;margin-bottom:.3rem}
+p{color:var(--mu);font-size:1.12rem;max-width:42rem}
+p b{color:var(--am);font-weight:800}
+mark{color:#fff;font-weight:800;background:linear-gradient(90deg,rgba(143,216,255,.5),rgba(143,216,255,.12)) 0 90%/0 .5em no-repeat;transition:background-size 1s .7s;padding:0 .12em;border-radius:.2em}
+.on mark{background-size:100% .5em}
+.r{opacity:0;transform:translateY(1.4rem);transition:opacity .8s cubic-bezier(.2,.7,.2,1) calc(var(--d,0)*.11s),transform .8s cubic-bezier(.2,.7,.2,1) calc(var(--d,0)*.11s)}
+.on .r{opacity:1;transform:none}
+.i{font:400 2rem/1 'Material Symbols Rounded';display:inline-block;width:1em;height:1em;overflow:hidden;white-space:nowrap;letter-spacing:normal;text-transform:none;direction:ltr;font-style:normal;color:var(--ice);-webkit-font-feature-settings:'liga';font-feature-settings:'liga';flex:none}
+.c{background:var(--gl);border:1px solid var(--bd);border-radius:1.6rem;padding:1.4rem 1.5rem;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.c h3{font-weight:800;color:var(--am);margin-bottom:.8rem}
+.l{list-style:none;padding:0;display:grid;gap:.75rem}
+.l li{display:flex;gap:.8rem;align-items:center}
+.l .i{font-size:1.5rem}
+.n{font-size:clamp(2.2rem,4vw,3.8rem);font-weight:800;color:#fff;white-space:nowrap}
+.n small{font:600 .38em Manrope,sans-serif;color:var(--mu)}
+.st{padding-left:1.2rem;border-left:2px solid var(--ice)}
+.st p{font-size:1rem}
+.f{display:flex;gap:1.1rem;align-items:flex-start}
+.f .i{font-size:1.7rem;padding:.75rem;box-sizing:content-box;border-radius:50%;background:var(--gl);border:1px solid var(--bd)}
+.f p{font-size:1rem}
+.ch{display:flex;flex-wrap:wrap;gap:.6rem}
+.ch span{padding:.5rem 1.05rem;border-radius:99px;border:1px solid var(--bd);background:var(--gl)}
+.bars{display:grid;gap:.7rem}
+.bar{padding:.85rem 1.1rem;border-radius:1rem;background:linear-gradient(90deg,rgba(143,216,255,.34),rgba(143,216,255,.05)) 0 0/0 100% no-repeat,var(--gl);transition:background-size 1.5s .6s cubic-bezier(.2,.7,.2,1)}
+.on .bar{background-size:var(--w) 100%}
+.bar b{display:block;font:800 1.2rem Unbounded,sans-serif;color:#fff}
+.bar span{color:var(--mu);font-size:.95rem}
+.x3{font:800 clamp(5rem,16vw,12rem)/.9 Unbounded,sans-serif;background:linear-gradient(160deg,#fff,var(--ice) 55%,var(--am));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sp{border-top:2px solid var(--bd);padding-top:1.1rem;position:relative}
+.sp::before{content:"";position:absolute;top:-2px;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--ice),var(--am));transition:width 1.2s calc(var(--d)*.2s)}
+.on .sp::before{width:100%}
+.sp .i{font-size:2.2rem;margin:.4rem 0 .6rem}
+.sp b{font:800 .9rem Unbounded,sans-serif;color:var(--am)}
+.bd{display:inline-flex;gap:.5rem;align-items:center;padding:.4rem 1rem;border-radius:99px;background:rgba(255,194,122,.14);color:var(--am);border:1px solid rgba(255,194,122,.45);font-weight:800;font-size:.9rem}
+.b{justify-self:start;display:inline-flex;align-items:center;gap:.7rem;padding:.9rem 1.6rem;border:0;border-radius:99px;font:800 1rem Manrope,sans-serif;color:#06121f;background:linear-gradient(100deg,var(--ice),#e2f6ff);cursor:pointer;box-shadow:0 .8rem 2rem -.8rem var(--ice)}
+.b .i{color:#06121f;font-size:1.4rem;animation:sp 9s linear infinite}
+button:focus-visible{outline:3px solid var(--am);outline-offset:3px}
+.art{width:min(100%,32rem,56vh);justify-self:center;animation:fl 7s ease-in-out infinite;filter:drop-shadow(0 2rem 3rem rgba(0,0,0,.45))}
+@keyframes fl{50%{transform:translateY(-.9rem)}}
+.rg{transform-origin:200px 200px;animation:sp 70s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.ey{transform-box:fill-box;transform-origin:center;animation:bl 6s infinite}
+@keyframes bl{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.08)}}
+.mt{position:absolute;left:0;bottom:0;width:100%;height:36%;pointer-events:none}
+.mt path{transition:transform .6s ease-out}
+.m1{transform:translateX(calc(var(--px,0)*-14px))}.m2{transform:translateX(calc(var(--px,0)*-28px))}.m3{transform:translateX(calc(var(--px,0)*-44px))}
+#sn{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+#pb{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;z-index:9;background:linear-gradient(90deg,var(--ice),var(--am));transition:width .6s}
+#dots{position:fixed;z-index:9;left:max(1.1rem,env(safe-area-inset-left,0px));bottom:max(1.3rem,env(safe-area-inset-bottom,0px));display:flex;gap:.45rem}
+#dots button{width:.55rem;height:.55rem;padding:0;border:0;border-radius:9px;background:rgba(255,255,255,.3);cursor:pointer;transition:.4s}
+#dots .a{width:1.8rem;background:var(--ice)}
+nav{position:fixed;z-index:9;right:max(1.1rem,env(safe-area-inset-right,0px));bottom:max(.9rem,env(safe-area-inset-bottom,0px));display:flex;gap:.5rem;align-items:center;color:var(--mu);font-size:.9rem}
+nav button{width:2.9rem;height:2.9rem;border-radius:50%;border:1px solid var(--bd);background:var(--gl);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:grid;place-items:center;cursor:pointer;padding:0}
+nav .i{font-size:1.5rem;color:#fff}
+@media (max-width:520px){#ct{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<canvas id="sn" aria-hidden="true"></canvas>
+<div id="pb"></div>
+<main>
+
+<section id="s1">
+<svg class="mt" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+<path class="m1" d="M-60 260L120 180 200 230 340 120 460 220 560 160 700 250 820 150 960 240 1100 130 1240 220 1340 170 1500 230V400H-60Z" fill="#1d3a5c" opacity=".75"/>
+<path class="m2" d="M-60 320L150 240 260 300 420 200 560 300 700 230 860 310 1000 220 1160 300 1300 240 1500 310V400H-60Z" fill="#12263f"/>
+<path class="m3" d="M-60 380L200 320 360 370 560 300 760 372 960 310 1180 372 1500 330V400H-60Z" fill="#0a1626"/>
+</svg>
+<div class="w two">
+<div style="display:grid;gap:1.2rem">
+<h1 class="r">Снежный<br>барс ёпт</h1>
+<p class="r"><b>Призрак гор.</b> Редкая большая кошка, которая живёт выше облаков и прыгает на <mark>15 метров</mark>.</p>
+<button class="b r" id="go"><i class="i">ac_unit</i>Погналинаху</button>
+</div>
+<svg class="art r" viewBox="0 0 400 400" role="img" aria-label="Стилизованная морда снежного барса">
+<defs>
+<radialGradient id="gl"><stop offset="0" stop-color="#8fd8ff" stop-opacity=".5"/><stop offset="1" stop-color="#8fd8ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="fu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#9eacba"/></linearGradient>
+<g id="e"><path d="M108 140C92 112 90 80 106 62C124 64 152 82 170 104Z" fill="#8795a4"/><path d="M118 122C111 104 111 90 117 79C129 83 143 93 153 105Z" fill="#26303c"/></g>
+<g id="f"><path d="M176 200Q182 232 178 262" stroke="#1b2430" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M112 196Q146 164 184 196" stroke="#1b2430" stroke-width="6" fill="none" stroke-linecap="round"/>
+<g class="ey"><path d="M120 196Q148 176 180 198Q150 216 120 196Z" fill="#f6fafc"/><circle cx="150" cy="197" r="12" fill="#a9d2c0"/><circle cx="150" cy="197" r="5.5" fill="#0b1118"/><circle cx="154" cy="193" r="2.5" fill="#fff"/></g>
+<g fill="#26303c"><circle cx="152" cy="118" r="5"/><circle cx="174" cy="106" r="4"/><circle cx="130" cy="146" r="5"/><circle cx="162" cy="142" r="4"/><circle cx="196" cy="116" r="3.5"/></g>
+<g fill="none" stroke="#2f3a47" stroke-width="5"><circle cx="106" cy="238" r="11"/><circle cx="130" cy="272" r="9"/><circle cx="98" cy="200" r="7"/></g></g>
+</defs>
+<circle cx="200" cy="200" r="198" fill="url(#gl)"/>
+<circle class="rg" cx="200" cy="200" r="184" fill="none" stroke="#8fd8ff" stroke-opacity=".4" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+<use href="#e"/><use href="#e" transform="matrix(-1 0 0 1 400 0)"/>
+<path d="M200 82C252 82 302 100 324 150C342 192 336 252 300 292C272 324 236 340 200 340C164 340 128 324 100 292C64 252 58 192 76 150C98 100 148 82 200 82Z" fill="url(#fu)"/>
+<use href="#f"/><use href="#f" transform="matrix(-1 0 0 1 400 0)"/>
+<ellipse cx="200" cy="284" rx="54" ry="42" fill="#f7fafc"/>
+<path d="M182 248H218L200 270Z" fill="#b98c8c"/>
+<path d="M200 270V288M200 288Q184 304 166 294M200 288Q216 304 234 294" stroke="#1b2430" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
+</div>
+</section>
+
+<section id="s2"><div class="w">
+<h2 class="r">Лёгкий, как ветер, и <mark>сильный</mark>, как скала</h2>
+<p class="r">Научное название — Panthera uncia. Это настоящая большая кошка, но рычать она не умеет.</p>
+<div class="g">
+<div class="st r"><i class="i">straighten</i><div class="n"><small>до </small><b data-n="130">0</b><small> см</small></div><p>длина тела</p></div>
+<div class="st r"><i class="i">gesture</i><div class="n"><small>до </small><b data-n="100">0</b><small> см</small></div><p>хвост — почти такой же длины, как тело</p></div>
+<div class="st r"><i class="i">monitor_weight</i><div class="n"><small>до </small><b data-n="55">0</b><small> кг</small></div><p>вес крупного самца</p></div>
+<div class="st r"><i class="i">flight_takeoff</i><div class="n"><small>до </small><b data-n="15">0</b><small> м</small></div><p>прыжок в длину со скалы на скалу</p></div>
+</div></div></section>
+
+<section id="s3"><div class="w two">
+<div style="display:grid;gap:1.2rem">
+<h2 class="r">Крыша мира — его <mark>дом</mark></h2>
+<p class="r">Барсы обитают в горах Центральной и Южной Азии — в 12 странах. В России они встречаются на Алтае, в Саянах и Туве.</p>
+<div class="ch" id="ch"><span>Россия</span><span>Монголия</span><span>Китай</span><span>Казахстан</span><span>Киргизия</span><span>Таджикистан</span><span>Узбекистан</span><span>Афганистан</span><span>Пакистан</span><span>Индия</span><span>Непал</span><span>Бутан</span></div>
+</div>
+<div class="bars r">
+<div class="bar" style="--w:100%"><b>5 500 м</b><span>рекорд высоты в Гималаях</span></div>
+<div class="bar" style="--w:82%"><b>3 000–4 500 м</b><span>основной «этаж» обитания</span></div>
+<div class="bar" style="--w:55%"><b>ниже 3 000 м</b><span>зимой спускается вслед за добычей</span></div>
+</div>
+</div></section>
+
+<section id="s4"><div class="w">
+<h2 class="r">Пять <mark>суперсил</mark> для жизни во льдах</h2>
+<div class="g" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr))">
+<div class="f r"><i class="i">ac_unit</i><div><h3>Шуба на −40 °C</h3><p>Густой мех: на брюхе он достигает 12 см.</p></div></div>
+<div class="f r"><i class="i">pets</i><div><h3>Лапы-снегоступы</h3><p>Широкие мохнатые лапы не проваливаются в снег.</p></div></div>
+<div class="f r"><i class="i">gesture</i><div><h3>Хвост-шарф</h3><p>В прыжке он балансир, а в мороз тёплое одеяло для морды.</p></div></div>
+<div class="f r"><i class="i">visibility_off</i><div><h3>Камуфляж</h3><p>Дымчатая шкура с розетками растворяется среди скал.</p></div></div>
+<div class="f r"><i class="i">air</i><div><h3>Тёплый вдох</h3><p>Широкие носовые ходы согревают ледяной воздух.</p></div></div>
+</div></div></section>
+
+<section id="s5"><div class="w two">
+<div style="display:grid;gap:1rem">
+<div class="x3 r">×3</div>
+<h2 class="r">Охотник <mark>сумерек</mark></h2>
+<p class="r">Барс — одиночка. Он подкрадывается по уступам и берёт добычу втрое тяжелее себя.</p>
+<div class="f r"><i class="i">nightlight</i><p>Активен на рассвете и в сумерках</p></div>
+<div class="f r"><i class="i">volume_off</i><p>Не рычит: мяукает, шипит и фыркает</p></div>
+</div>
+<div class="c r"><h3>Меню барса</h3>
+<ul class="l"><li><i class="i">restaurant</i>Сибирский горный козёл</li><li><i class="i">restaurant</i>Горные бараны: аргали, бхарал</li><li><i class="i">restaurant</i>Сурки и зайцы</li><li><i class="i">restaurant</i>Горные куропатки — улары</li></ul></div>
+</div></section>
+
+<section id="s6"><div class="w">
+<h2 class="r">Как растут <mark>котята</mark></h2>
+<p class="r">Беременность длится около 100 дней. Котята рождаются весной в логове среди скал.</p>
+<div class="g">
+<div class="sp r"><b>1</b><br><i class="i">child_care</i><h3>Рождение</h3><p>2–3 котёнка, вес около 450 г. Слепые и беспомощные.</p></div>
+<div class="sp r"><b>2</b><br><i class="i">visibility</i><h3>Через неделю</h3><p>Открываются глаза.</p></div>
+<div class="sp r"><b>3</b><br><i class="i">directions_walk</i><h3>2–3 месяца</h3><p>Выходят из логова и идут за мамой.</p></div>
+<div class="sp r"><b>4</b><br><i class="i">landscape</i><h3>Около 2 лет</h3><p>Начинают самостоятельную жизнь на своём участке.</p></div>
+</div></div></section>
+
+<section id="s7"><div class="w two">
+<div style="display:grid;gap:1.1rem">
+<h2 class="r">Спасём <mark>призрака</mark> гор</h2>
+<div class="n r" style="font-size:clamp(2.6rem,6vw,5.5rem)">4–6 <small>тыс. особей</small></div>
+<div class="bd r"><i class="i" style="font-size:1.2rem;color:var(--am)">warning</i>МСОП: уязвимый вид</div>
+<p class="r">Численность сокращается. В России снежный барс занесён в Красную книгу.</p>
+</div>
+<div style="display:grid;gap:1.2rem">
+<div class="c r"><h3>Что ему угрожает</h3><ul class="l"><li><i class="i">gavel</i>Браконьерство ради меха и костей</li><li><i class="i">pets</i>Конфликты с пастухами</li><li><i class="i">thermostat</i>Потепление: лес поднимается в горы</li></ul></div>
+<div class="c r"><h3>Как помочь</h3><ul class="l"><li><i class="i">volunteer_activism</i>Поддерживать заповедники</li><li><i class="i">share</i>Рассказывать о барсах друзьям</li><li><i class="i">block</i>Не покупать изделия из меха диких кошек</li></ul></div>
+<p class="r"><b>23 октября</b> — Международный день снежного барса. Всё, я заебался, пасиба за внимание!</p>
+</div>
+</div></section>
+
+</main>
+<div id="dots"></div>
+<nav><span id="ct"></span><button id="pv" aria-label="Назад"><i class="i">expand_less</i></button><button id="nx" aria-label="Вперёд"><i class="i">expand_more</i></button><button id="fs" aria-label="Во весь экран"><i class="i">fullscreen</i></button></nav>
+<script>
+const $=s=>document.querySelector(s),S=[...document.querySelectorAll('section')],m=$('main'),pb=$('#pb'),ct=$('#ct'),dt=$('#dots');let cur=0;
+document.querySelectorAll('.i').forEach(e=>e.setAttribute('aria-hidden','true'));
+document.querySelectorAll('.ch span').forEach(e=>e.classList.add('r'));
+const go=i=>S[Math.max(0,Math.min(S.length-1,i))].scrollIntoView({behavior:'smooth'});
+S.forEach((s,i)=>{s.querySelectorAll('.r').forEach((e,j)=>e.style.setProperty('--d',j));const b=document.createElement('button');b.setAttribute('aria-label','Слайд '+(i+1));b.onclick=()=>go(i);dt.append(b)});
+const up=()=>{pb.style.width=(cur+1)/S.length*100+'%';ct.textContent=(cur+1)+' / '+S.length;[...dt.children].forEach((b,i)=>b.classList.toggle('a',i==cur))};
+const cu=el=>{const n=+el.dataset.n,t=performance.now(),f=now=>{const p=Math.min(1,(now-t)/1600);el.textContent=Math.round(n*(1-(1-p)**3));p<1&&requestAnimationFrame(f)};requestAnimationFrame(f)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cur=S.indexOf(e.target);e.target.classList.add('on');e.target.querySelectorAll('[data-n]').forEach(x=>{if(!x.dataset.d){x.dataset.d=1;cu(x)}});up()}),{root:m,rootMargin:'-45% 0px -45% 0px'});
+S.forEach(s=>io.observe(s));
+const fs=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();
+$('#go').onclick=()=>go(1);$('#pv').onclick=()=>go(cur-1);$('#nx').onclick=()=>go(cur+1);$('#fs').onclick=fs;
+addEventListener('keydown',e=>{const k=e.key;if((e.ctrlKey||e.metaKey)&&'+-=0'.includes(k))return e.preventDefault();
+if(['ArrowDown','ArrowRight','PageDown',' '].includes(k)){e.preventDefault();go(cur+1)}
+else if(['ArrowUp','ArrowLeft','PageUp'].includes(k)){e.preventDefault();go(cur-1)}
+else if(k==='Home')go(0);else if(k==='End')go(S.length-1);else if(k==='f'||k==='F')fs()});
+['gesturestart','gesturechange','gestureend'].forEach(t=>addEventListener(t,e=>e.preventDefault()));
+addEventListener('wheel',e=>{if(e.ctrlKey)e.preventDefault()},{passive:false});
+addEventListener('pointermove',e=>{const s=document.documentElement.style;s.setProperty('--px',(e.clientX/innerWidth-.5).toFixed(2))});
+const cv=$('#sn'),g=cv.getContext('2d'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;let W,H,F=[];
+const rz=()=>{const r=devicePixelRatio||1;W=cv.width=innerWidth*r;H=cv.height=innerHeight*r;F=Array.from({length:Math.min(140,innerWidth/9|0)},()=>({x:Math.random()*W,y:Math.random()*H,r:(Math.random()*2+.7)*r,v:(Math.random()*.7+.3)*r,p:Math.random()*9}))};
+rz();addEventListener('resize',rz);
+(function a(t){g.clearRect(0,0,W,H);g.fillStyle='#fff';F.forEach(f=>{f.y+=f.v*.7;f.x+=Math.sin(t/1500+f.p)*.35*f.v;if(f.y>H+9){f.y=-9;f.x=Math.random()*W}g.globalAlpha=.3+f.r/(6*(devicePixelRatio||1));g.beginPath();g.arc(f.x,f.y,f.r,0,6.3);g.fill()});if(!rm)requestAnimationFrame(a)})(0);
+</script>
+</body>
+</html>
